@@ -1,0 +1,36 @@
+\phantomsection
+\addtocontents{toc}{\protect\vspace{12pt}\mbox{}\protect\hrulefill\par\protect\vspace{12pt}}
+	\chapter* {Appendix}
+		\label{chap:appendix}
+		\addcontentsline{toc}{chapter}{ 	\en{Appendix}
+							\de{Anhang}}
+							\addcontentsline{lof}{chapter}{ }
+\markboth{Appendix}{Appendix}
+
+\def\thesection{\Alph{section}}
+\renewcommand\theequation{\Alph{section}.\arabic{equation}}
+\numberwithin{equation}{section}
+\setcounter{section}{0}
+
+% --------------------------------------------------------
+% CONTENT ....
+% --------------------------------------------------------
+
+
+% ##########################################################
+\newpage
+\section {Digital Appendix}
+\label{sec:appendix_cd}
+
+\addListNoSep {
+	\addtocounter{subsection}{1}
+	\addcontentsline{toc}{subsection}{\protect\numberline{\thesubsection} Restriction Notice}
+	\phantomsection
+	\item [\faFilePdfO] {\LinkFile{01\_restriction\_notice.pdf}{01\_restriction\_notice.pdf}}
+	\addtocounter{subsection}{1}
+	\addcontentsline{toc}{subsection}{\protect\numberline{\thesubsection} Thesis}
+	\phantomsection
+	\item [\faFilePdfO] {\LinkFile{02\_thesis\_isalomo3s\_9026862.pdf}{02\_master\_thesis\_isalomo3s\_9026862.pdf}}
+}
+
+\addtocontents{toc}{\protect\vspace{12pt}\mbox{}\protect\hrulefill\par\protect\vspace{12pt}}

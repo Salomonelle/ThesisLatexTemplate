@@ -1,0 +1,778 @@
+% #####################################
+% THESIS TEMPLATE (HBRS BACHELOR & MASTER)
+% ----> content/99_Erklaerung.tex
+% Author: Ilka Salomon
+% E-Mail: ilka.salomon@gmx.de
+% #####################################
+
+
+\documentclass[12pt,a4paper,twoside, xcolor=dvipsnames, openright]{book}
+
+%\usepackage[doublespacing]{setspace}
+% INCLUDES ------------------------------------------------------
+\usepackage{glossaries}
+\usepackage{fancyhdr}
+\usepackage{xcolor,colortbl}
+\usepackage{pgffor}
+\usepackage{blindtext}
+\usepackage{ifthen,changepage}
+\usepackage[english]{babel}
+\usepackage{mathptmx}
+\usepackage[toc,page,titletoc]{appendix}
+\usepackage[scaled]{helvet}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{titlesec}
+\usepackage{blindtext}
+\usepackage[includeheadfoot, a4paper,top=2cm,bottom=2cm,left=4cm,right=2cm]{geometry}
+%\usepackage {extsizes}
+\usepackage{graphicx}
+\usepackage {ifthen}
+\usepackage{tocloft} 
+\usepackage{tabularx}
+\usepackage{forest}
+\usepackage{booktabs}
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
+\usepackage{etoolbox}
+\usepackage{glossary-mcols}
+\usepackage{float}
+%\usepackage{multibbl}
+%\makeatother
+\usepackage[square,sort,comma,numbers]{natbib}
+\usepackage{multibib}
+\newcites{ltex}{Online Sources}
+\def\@mb@citenamelist{cite,citep,citet,citealp,citealt,citepltex,citetltex}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage{svg}
+\usepackage{pifont}
+\usepackage{xcolor}
+\usepackage{amsthm}
+\usepackage{framed}
+\usepackage{scrextend}
+\usepackage[most]{tcolorbox}
+\usetikzlibrary{shadows}
+\usetikzlibrary[shadows]
+\usepackage{trfsigns}
+\usepackage{bigints}
+\usepackage{relsize}
+\usepackage{cancel}
+\usepackage{listings}
+\usepackage{tcolorbox} 
+\usepackage{pgfgantt}
+\usepackage[margin=10pt,font=small,labelfont=bf,
+labelsep=endash]{caption}
+\usepackage{subcaption}
+\usepackage{fontawesome}
+\usepackage{adjustbox}
+\usepackage{forest}
+\usepackage{multirow}
+\usepackage{xspace}
+\usepackage{electrum}
+\usepackage{enumitem}
+\usepackage{arydshln}
+\usepackage{nameref}
+\appto\UrlBreaks{\do\-}
+\usepackage[onehalfspacing]{setspace}
+%\usepackage{libertine}
+% ###############################################
+% COLORS
+% ###############################################
+
+% HBRS Color Scheme --------
+\definecolor{hbrs_scheme1}{HTML}{00ACFB}
+%\setbeamercolor{hbrs_scheme1}{fg=hbrs_scheme1,bg=white}
+\definecolor{hbrs_scheme2}{HTML}{0099E0}
+\definecolor{hbrs_scheme3}{HTML}{007DB8}
+\definecolor{hbrs_scheme4}{HTML}{00628F}
+\definecolor{hbrs_scheme5}{HTML}{004666}
+\definecolor{todo_scheme}{HTML}{FF8800}
+\definecolor{hbrs_scheme6}{HTML}{b8d0db}
+% -------------------------
+% MATLAB Color Scheme --------
+\definecolor{matlab_blue}{HTML}{0099E0}
+% DRAW IO Color Scheme --------
+\definecolor{drawio_orange}{HTML}{D79B00}
+\definecolor{drawio_red}{HTML}{B85450}
+\definecolor{drawio_green}{HTML}{82B366}
+\definecolor{drawio_blue}{HTML}{6C8EBF}
+
+
+\definecolor{folderbg}{RGB}{124,166,198}
+\definecolor{folderborder}{RGB}{110,144,169}
+
+\def\Size{4pt}
+\tikzset{
+  folder/.pic={
+    \filldraw[draw=folderborder,top color=folderbg!50,bottom color=folderbg]
+      (-1.05*\Size,0.2\Size+5pt) rectangle ++(.75*\Size,-0.2\Size-5pt);  
+    \filldraw[draw=folderborder,top color=folderbg!50,bottom color=folderbg]
+      (-1.15*\Size,-\Size) rectangle (1.15*\Size,\Size);
+  }
+}
+
+
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+
+\newcommand\nd{\textsuperscript{nd}\xspace}
+\newcommand\st{\textsuperscript{st}\xspace}
+\newcommand\rd{\textsuperscript{rd}\xspace}
+
+
+% SETTINGS ------------------------------------------------------
+
+	% Language ____________________________
+
+	\newif\ifen
+	\newif\ifde
+	\newcommand{\en}[1]{\ifen#1\fi}
+	\newcommand{\de}[1]{\ifde#1\fi}
+	% setting:
+	\entrue
+
+	% Date and Time ____________________________
+	
+	\usepackage{datetime}
+	\newdateformat{englishDate}{%
+	\the\day
+	\ifthenelse {\equal{\the\day}{1}}{st}{\ifthenelse {\equal{\the\day}{2}}{nd}{\ifthenelse {\equal{\the\day}{3}}{rd}{th}}}
+	\monthname[\THEMONTH], \THEYEAR}
+
+
+	% Font Basics ____________________________
+	\renewcommand\familydefault{\sfdefault}
+	\setlength{\parindent}{0in}
+
+	% Chapters ______________________________
+	\patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
+	\titleformat{\chapter}
+	  {\normalfont\fontsize{16pt}{16pt}\selectfont\bfseries\color{black}}
+	  {\thechapter}{16pt}{\fontsize{16pt}{16pt}\selectfont}
+	\titlespacing*{\chapter}{0pt}{12pt}{12pt}
+
+	% Sections ______________________________
+	\titleformat{\section}
+	  {\normalfont\fontsize{13pt}{13pt}\selectfont\bfseries\color{black}}
+	  {\thesection}{13pt}{\fontsize{13pt}{13pt}\selectfont}
+	\titlespacing*{\section}{0pt}{12pt}{6pt}
+	
+	% Subsections ______________________________
+	\titleformat{\subsection}
+	  {\normalfont\fontsize{12pt}{12pt}\selectfont\bfseries\color{black}}
+	  {\thesubsection}{12pt}{\fontsize{12pt}{12pt}\selectfont}
+	\titlespacing*{\subsection}{0pt}{6pt}{6pt}
+	
+	 %Subsubsections ______________________________
+	%\titleformat*{\subsubsection}[runin]{\color{hbrs_scheme3}\bfseries}{}{}{\\}[ | \hspace*{2cm}]
+	\titleformat{\subsubsection}
+	{\normalfont\fontsize{12pt}{12pt}\selectfont\bfseries\color{hbrs_scheme4}}
+	  {\thesubsection}{12pt}{\fontsize{12pt}{12pt}\selectfont}
+	\titlespacing*{\subsubsection}{0pt}{6pt}{4pt}
+	
+	% Headers/Footers _______________________
+
+	\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+	\fancypagestyle{normalpage} {
+		\fancyfoot[E]{}                            % Delete current footer settings
+		\fancyhead[E]{}
+		\fancyfoot[O]{}                            % Delete current footer settings
+		\fancyhead[O]{}
+		\fancyhf{}
+		\setlength{\headheight}{1cm}
+		\setlength{\headsep}{25pt}
+		%\setlength{\topmargin}{-1.5cm}
+		%\setlength{\voffset}{3.5cm}
+		\renewcommand{\footrulewidth}{0.5pt}
+		\fancyfoot[RO,LE]{\bfseries\thepage}    % Page number (boldface) in left on even
+	
+		%\fancyhead[LO]{\includegraphics [width=6cm]{logo_hbrs}}      % Logo in the left on odd pages
+		%\fancyhead[LO]{\includegraphics [width=3cm]{logo_ford}}      % Logo in the left on odd pages
+		\fancyhead[RO]{\includegraphics [width=6cm]{logo_hbrs} \hspace {0.5cm} \includegraphics [width=3cm]{logo_ford}}      % Logo in the left on odd pages
+		%\fancyhead[LO]{\includegraphics [width=3cm]{logo_ford} \hspace {0.5cm} \includegraphics [width=6cm]{logo_hbrs} }      % Logo in the left on odd pages
+		\fancyhead[LE]{\bfseries\nouppercase{\leftmark} }                 % chaptername in the right on even pages
+		%\fancyhead[C] {\includegraphics [width=2cm]{logo_ford}}
+	}
+	
+	%\tableofcontents{\thispagestyle{normalpage}}
+	
+	% Figures  _________________________________
+		\renewcommand{\thefigure}{\thesection-\arabic{figure}}
+		\addto\captionsgerman{%
+			\renewcommand{\figurename}%
+			{\de{Abbildung}\en{Figure}}%
+		}
+		\numberwithin{figure}{section}
+
+	% Tables  _________________________________
+		\renewcommand{\thetable}{\thesection-\arabic{table}}
+		\renewcommand*{\arraystretch}{1.2}
+
+		\addto\captionsgerman{%
+		\renewcommand{\tablename}%
+		{\de{Tabelle}\en{Table}}%
+		}
+
+	% Listing  _________________________________
+	\AtBeginDocument{\renewcommand*{\thelstlisting}{\thesection-\arabic{lstlisting}}}
+	\renewcommand{\lstlistingname}{\vspace{4mm}\bfseries\itshape{Listing}}
+	\renewcommand{\lstlistlistingname}{List of Listings}% List of Listings -> List of Algorithms
+	\setlength{\cftfignumwidth}{4 em}
+	\setlength{\cfttabnumwidth}{4 em}
+	\captionsetup[lstlisting]{format=hang, font=small, labelfont=bf, indention=-2.5cm}
+
+	\lstdefinelanguage{seesharp}{
+		basicstyle=\scriptsize,
+		frame=tb,
+		emph=[1]%
+    {%
+    SimpleIoc, new, Binding, Environment, NewCloudDiagnosticsChunkAvailable, NewCloudCommunicationChunkAvailable,
+	DataExplorerConnectionContext, CvbopConnectionContext, Fields, Properties, Methods, \\\\
+    },
+    emphstyle=[1]{\bfseries\color{drawio_green}},
+    %
+    emph=[2]% 
+    {% 
+	MeasurementManager, CloudCommuncationService, CloudDiagnosticService, Token, Uri, HttpClient, ValidationRule, CloudProvisioningStatusEntry, CloudProvisioningAuthorizationStatus,
+	ICloudDiagnosticBase, NewCloudDiagnosticsChunkAvailableArgs, AuthenticationHeaderValue, Result,
+	StaticResource, CloudEnrollmentStatus, CloudEnrollmentStatusMapper, EnrollmentDetailsHolder, IEnumerable, List,
+    public, private, string, bool, RelayCommand, void, Button, return, null, ViewModelClass, ModelClass, Dictionary,
+	CvbopApiV2Repository,DataExplorerApiV2Repository, IDataExplorerRepository, ICvbopRepository, IRestClient
+    },
+	emphstyle=[2]{\bfseries\color{drawio_blue}},
+	%
+	emph=[3]% 
+	{% 
+	Register, GetInstance, GetCloudDiagnosticService, GetCloudCommunicationService, ValidateProvisioningStatus,
+	PrepareAndInvokeMessageChunks, UpdateDiagnostics, MethodName, Create,
+	GetCloudEnrollmentStatus, FindEnrollmentDetails, Map, MapBack, Get, Put, Converter,
+	SetRestClient, UpdateDiagnostics
+	},
+	emphstyle=[3]{\bfseries\color{drawio_orange}},
+	%
+	emph=[4]% 
+	{% 
+	get, set, _cvbopRepository, _dataExplorerRepository, _restClient, _cloudDiagnosticService
+	},
+	emphstyle=[4]{\bfseries\color{drawio_red}},
+	}
+
+	% Table of Contents  _______________________
+	\renewcommand\cfttoctitlefont{\normalfont\fontsize{16pt}{16pt}\selectfont\bfseries}
+	\setlength{\cftpartindent}{0em}
+	\renewcommand{\cftchapdotsep}{\cftdotsep}
+	\renewcommand{\cftsecdotsep}{\cftdotsep}
+	\renewcommand{\cftsubsecdotsep}{\cftdotsep}
+	\renewcommand{\cftsubsubsecdotsep}{\cftdotsep}
+	\setlength{\cftbeforetoctitleskip}{12pt}
+	\setlength{\cftbeforeloftitleskip}{12pt}
+	\setlength{\cftbeforelottitleskip}{12pt}
+	%\renewcommand\l@lstlisting[2]{\@dottedtocline{1}{1.5em}{4em}{~#1}{#2}}
+	
+	\renewcommand{\cftpartpagefont}{\cftchappagefont} % Heading 1 / Roman Nr
+	\renewcommand{\cftchappagefont}{\cftsecpagefont} % Heading 1 / Roman Nr
+	%\setlength{\cftbeforechapskip} {6pt} % Heading 1 / Arabic Nr
+	\setlength{\cftbeforechapskip} {8pt} % Heading 1 / Arabic Nr
+	\setlength{\cftbeforesecskip} {6pt} % Heading 2
+	\setlength{\cftbeforesubsecskip} {6pt} % Heading 3
+	\setlength{\cftbeforesubsubsecskip} {6pt} % Heading 4
+
+	% List of Figures
+	
+	\renewcommand\cftloftitlefont{\normalfont\fontsize{16pt}{16pt}\selectfont\bfseries}
+	\renewcommand\cftfigfont{\bfseries}
+	%\renewcommand\cftfigpagefont{\Large}
+	\renewcommand{\cftfigdotsep}{\cftdotsep}
+	
+	% List of Tables
+	
+	\renewcommand\cftlottitlefont{\normalfont\fontsize{16pt}{16pt}\selectfont\bfseries}
+	\renewcommand\cfttabfont{\bfseries}
+	%\renewcommand\cfttabpagefont{\Large}
+	\renewcommand{\cfttabdotsep}{\cftdotsep}
+
+	% List of Listings
+	\makeatletter
+	\renewcommand*{\l@lstlisting}[2]{\@dottedtocline{1}{1.5em}{3.5em}{\bfseries#1}{#2}}
+	\let\my@chapter\@chapter
+	\renewcommand*{\@chapter}{%
+	  \addtocontents{lol}{\protect\addvspace{10pt}}%
+	  \my@chapter}
+	  \addtocontents{lol}{\protect\addvspace{30pt}}
+	\makeatother
+
+
+	% Glossary Style General   _______________________
+	
+	%\makenoidxglossaries
+	\makeglossaries
+	\setacronymstyle{long-short}
+	\setglossarystyle{alttreegroup} % 1 Column
+	%\setglossarystyle{mcolalttreegroup} % 2 Columns
+	%\renewcommand{\glsnamefont}[1]{\normalfont\fontsize{12pt}{12pt}\selectfont{\bfseries #1}}
+	%\renewcommand{\glsnamefont}[1]{\normalfont\fontsize{12pt}{12pt}\selectfont{#1}}
+
+	% Setup Glossary Divider   _______________________
+	\renewcommand*{\glsgroupheading}[1]{\par
+	\def\@gls@prevlevel{-1}%
+	\hangindent0pt\relax
+	\parindent0pt\relax
+	\glstreegroupheaderfmt{\normalfont\bfseries\fontsize{14pt}{14pt}\selectfont\glsgetgrouptitle{#1} \rule{\textwidth}{0.01pt}}\par\indexspace} % Line as Divider
+	% \glstreegroupheaderfmt{\normalfont\bfseries\fontsize{14pt}{14pt}\selectfont\glsgetgrouptitle{#1} \rule{120pt}{0.4pt}}\par\indexspace} % Line as Divider, short
+	%\glstreegroupheaderfmt{\glsgetgrouptitle{#1} \vspace{5pt} \dotfill}\par\indexspace} % Dots as Divider
+	% Column Seperation ------------
+	\setlength{\columnsep}{1cm}
+	\setlength{\columnseprule}{1pt}
+	%\newglossary[slg]{symbols}{sym}{sbl}{Symbols}
+	%\loadglsentries{gls_symbols}
+	%\newglossary[alg]{acronyms}{acr}{acn}{Abkürzungsverzeichnis}
+	\loadglsentries{gls_acronyms}
+	\glssetwidest{sanhhhhkkkhhheck}
+	\glsenablehyper
+	\makeglossaries
+% MACROS ------------------------------------------------------------
+
+	% Citations _________________________________
+
+		% Block Citation
+		% \blockCitation {content}
+			\newcommand {\BlockCitation} [1]
+			{\par \begingroup \leftskip 1cm \begin{tabular}
+			{| p{12cm}} {#1} \end {tabular} \\ \par \endgroup}
+
+		% Text Indent 1cm
+		% \indentText {content}
+			\newcommand {\indentText} [1]
+			{\par \begingroup \leftskip 1cm \begin{tabular}
+			{p{12cm}} {#1} \end {tabular} \leftskip 0cm \par \endgroup}
+
+	% FIGURES _________________________________
+
+		% Add Figure
+		% \addFigure [opt. width multiplier / standard = 0.8 * \textwidth]{File Name = Lable Name}{Caption}{Position}
+		\newcommand {\addFigure} [5] [0.8]
+		{\begin {figure} [#5] \center
+		\includegraphics [width=#1\textwidth] {#2} 
+		\bfseries\scriptsize\itshape{\caption[\normalfont#4]{\mdseries\footnotesize\itshape{#3}}\label{fig:#2}}
+		\end {figure}}
+		
+		% Add Figure
+		% \addRotatedFigure [opt. width multiplier / standard = 0.8 * \textwidth]{File Name = Lable Name}{Caption}{Position}
+		\newcommand {\addRotatedFigure} [5] [0.8]
+		{\begin {figure} [#5] \center
+		\includegraphics [width=#1\textwidth, angle =90] {#2} 
+		\bfseries\scriptsize\itshape{\caption[\normalfont#4]{\mdseries\footnotesize\itshape{#3}}\label{fig:#2}}
+		\end {figure}}
+		
+		% Add SVG Figure
+		% \addFigureSVG [opt. width multiplier / standard = 0.8 * \textwidth]{File Name = Lable Name}{Caption}{Position}
+		\newcommand {\addFigureSVG} [5] [0.8]
+		{\begin {figure} [#5] \center
+		\includesvg [width=#1\textwidth] {#2} 
+		\bfseries\scriptsize\itshape{\caption[\normalfont#4]{\mdseries\footnotesize\itshape{#3}}\label {fig:#2}}
+		\end {figure}}
+		
+		% Add SVG Figure
+		% \addRotatedFigureSVG [opt. width multiplier / standard = 0.8 * \textwidth]{File Name = Lable Name}{Caption}{Position}
+		\newcommand {\addRotatedFigureSVG} [5] [0.8]
+		{\begin {figure} [#5] \center
+		\includesvg [width=#1\textwidth, angle =90] {#2} 
+		\bfseries\scriptsize\itshape{\caption[\normalfont#4]{\mdseries\footnotesize\itshape{#3}}\label {fig:#2}}
+		\end {figure}}
+		
+		% Add Wrap Figure
+		% \addWrapFigure  {width wrap thing multiplier: width = x * \textwidth} {width figure multiplier: width = x * \textwidth}{File Name = Lable Name} {Caption}
+		
+		\usepackage{wrapfig}
+		\newcommand {\addWrapFigure} [5]
+		{\par\begin{wrapfigure}{L}{#1\textwidth}
+		\centering
+		\includegraphics[width=#2\textwidth]{#3}
+		\bfseries\scriptsize\itshape{\caption[\normalfont#4] {\mdseries\footnotesize\itshape{#5}}
+		\label{fig:#3}}
+		\end{wrapfigure}\par}
+		
+		\newcommand {\addWrapFigureSVG} [5]
+		{\par\begin{wrapfigure}{L}{#1\textwidth}
+		\centering
+		\includesvg [width=#2\textwidth]{#3}
+		\bfseries\tiny\itshape{\caption[\normalfont#4] {\mdseries\footnotesize\itshape{#5}}}
+		\label{fig:#3}\end{wrapfigure}\par}
+		
+
+		% Add Figure
+		% \addFigureTrim [opt. width multiplier / standard = 0.8 * \textwidth]{File Name = Lable Name}{Caption}{Position}
+		\newcommand {\addFigureTrim} [6] [0.8]
+		{\begin {figure} [#5] \center
+		\includegraphics [width=#1\textwidth,trim= #6, clip] {#2} 
+		\bfseries\scriptsize\itshape{\caption[\normalfont#4]{\mdseries\footnotesize\itshape{#3}}\label {fig:#2}}
+		\end {figure}}
+		% AddTwoFigures
+		% \addTwoFigures {File Name 1 = Lable Name 1}{Caption 1} {File Name 2 = Lable Name 2}{Caption 1}
+		
+		\newcommand {\addTwoFigures} [8] 		
+		{
+			\begin{figure} [#7]
+			\centering
+			\begin{subfigure}{.5\textwidth}
+			  \centering
+			  \includegraphics[width=#6\linewidth]{#1}
+			  \bfseries\scriptsize\itshape{\caption[\normalfont#2] {\mdseries\footnotesize\itshape{#2}}\label{fig:#1}}
+			  
+			\end{subfigure}%
+			\begin{subfigure}{.5\textwidth}
+			  \centering
+			  \includegraphics[width=#6\linewidth]{#3}
+			  \bfseries\scriptsize\itshape{\caption[\normalfont#4] {\mdseries\footnotesize\itshape{#4}} \label{fig:#3}}
+			 
+			\end{subfigure}
+			\bfseries\scriptsize\itshape{\caption[\normalfont#8] {\mdseries\footnotesize\itshape{#5}}\label{fig:#1_and_#3}}
+			
+			\end{figure}
+		}
+
+		% Provide a way to declare and renew a command in one command
+		\newcommand{\neworrenewcommand}[1]{\providecommand{#1}{}\renewcommand{#1}}
+
+		\newcommand{\addThreeFigures}[9]{
+			\neworrenewcommand{\TmpAddThreeFigures}[1]{
+				\begin{figure} [#9]
+					\centering
+					\begin{subfigure}{.3\textwidth}
+					\centering
+					\includegraphics[width=#8\linewidth]{#1}
+					\bfseries\scriptsize\itshape{\caption[\normalfont#2] {\mdseries\footnotesize\itshape{#2}}\label{fig:#1}}
+					\end{subfigure}%
+					\begin{subfigure}{.3\textwidth}
+					\centering
+					\includegraphics[width=#8\linewidth]{#3}
+					\bfseries\scriptsize\itshape{\caption[\normalfont#4] {\mdseries\footnotesize\itshape{#4}} \label{fig:#3}}
+					
+					\end{subfigure}%
+					\begin{subfigure}{.3\textwidth}
+						\centering
+						\includegraphics[width=#8\linewidth]{#5}
+						\bfseries\scriptsize\itshape{\caption[\normalfont#6] {\mdseries\footnotesize\itshape{#6}} \label{fig:#5}}
+					\end{subfigure}
+					\bfseries\scriptsize\itshape{\caption[\normalfont##1] {\mdseries\footnotesize\itshape{#7}}\label{fig:#1_and_#3_and#5}}
+					
+					\end{figure}
+			}
+			\TmpAddThreeFigures
+		}
+
+		\newcommand {\addThreeFiguresSvg} [9] 		
+		{
+			\neworrenewcommand{\TmpAddThreeFiguresSvg}[1]{
+			\begin{figure} [#9]
+			\centering
+			\begin{subfigure}{.3\textwidth}
+			  \centering
+			  \includesvg[width=#8\linewidth]{#1}
+			  \bfseries\scriptsize\itshape{\caption[\normalfont#2] {\mdseries\footnotesize\itshape{#2}}\label{fig:#1}}
+			\end{subfigure}%
+			\begin{subfigure}{.3\textwidth}
+			  \centering
+			  \includesvg[width=#8\linewidth]{#3}
+			  \bfseries\scriptsize\itshape{\caption[\normalfont#4] {\mdseries\footnotesize\itshape{#4}} \label{fig:#3}}
+			 
+			\end{subfigure}%
+			\begin{subfigure}{.3\textwidth}
+				\centering
+				\includesvg[width=#8\linewidth]{#5}
+				\bfseries\scriptsize\itshape{\caption[\normalfont#6] {\mdseries\footnotesize\itshape{#6}} \label{fig:#5}}
+			  \end{subfigure}
+			\bfseries\scriptsize\itshape{\caption[\normalfont##1] {\mdseries\footnotesize\itshape{#7}}\label{fig:#1_and_#3_and#5}}
+			\end{figure}
+			}
+			\TmpAddThreeFiguresSvg
+		}
+
+	% TABLES _________________________________
+
+		% Add Table
+		% \addTable {caption}{label}{vlinestyle}{position}{content}
+		% other useful commands: \multirow{n}{*}{Content} <- * for centering
+		% \multicolumn {n} {vlinestyle, e.g. |c|} {Content}
+		% \cline {n,m}
+		\newcommand {\addTable} [6]
+		{ \begin {table} [#5]  \bfseries\scriptsize\itshape{\caption[\normalfont#4]{\mdseries\footnotesize\itshape#1 \vspace{-0.3cm}\label {tab:#2} }} 
+		\normalfont\fontsize{12pt}{12pt}\selectfont\center \begin {tabular} {#3} \toprule #6 \\ \bottomrule \end {tabular}
+		 \end {table}}
+
+		 \newcommand {\addTableRotated} [6]
+		 { \begin {table} [#5]  \bfseries\scriptsize\itshape{\caption[\normalfont#4]{\mdseries\footnotesize\itshape#1 \vspace{0cm}\label {tab:#2} }} 
+		 \normalfont\fontsize{12pt}{12pt}\selectfont\center 
+		 \begin{adjustbox}{angle=90}
+		 \begin {tabular} {#3} \toprule #6 \\ \bottomrule \end {tabular}
+		 \end{adjustbox}
+		  \end {table}}
+
+		\newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
+
+		\newcommand {\doubleRow} [1]
+		{\multirow{2}{*}{#1}}
+
+		\newcommand {\doubbleRow} [1]
+		{\multirow{2}{p{4cm}}{#1}}
+
+	% ITEMIZE _________________________________
+
+		\newcommand {\addList} [1]
+		{\vspace{-0.5cm}\begin{singlespace}\begin{itemize} #1
+		\end{itemize}\end{singlespace}}
+		\newcommand {\addListNoSep} [1]
+		{\begin{itemize}[noitemsep,topsep=0.3em] #1
+		\end{itemize}}
+		\newcommand {\itm} [1]
+		{\item[\faStop]{#1}}
+		\newcommand {\iitm}[1]
+		{\addList{\itm #1}}
+
+		\newcommand {\ilkaBullet} {
+		\item [\color{hbrs_scheme3} \ding{110}]}
+		
+		
+		\newcommand {\ilkaBulletWithDescription} [4] {
+		
+		\ilkaBullet {
+			\begin {tabular}
+				{ m{#3} !{\color{hbrs_scheme3}\vrule width 1.5px\hspace{-2px}} !{\color{hbrs_scheme4}\vrule width 1px\hspace{-2px}} !{\color{hbrs_scheme5}\vrule width 0.5px} m{#4} }
+				 \textbf{#1} & #2
+			\end{tabular}}
+		}
+		
+		\newcommand {\twoColumnList} [2] {
+		\vspace{-0.5cm}\\ \vspace{-0.3cm}
+		\begin {tabular} {p{6cm} p{6cm}}\begin {itemize}#1\end{itemize}& \begin {itemize}#2\end{itemize}
+		\end {tabular}
+		}
+		
+	% QUOTE _________________________________
+
+		\newtcolorbox{quoteBox}[1]{colback=hbrs_scheme1!5!white,colframe=hbrs_scheme4!75!white, leftrule=3mm,drop shadow southeast}
+
+		\newcommand{\AddQuote}[2] {
+			\begin{addmargin}[0.5cm]{0.5cm}
+				\begin{quoteBox}
+					\textit{``#1''{} #2}
+				\end{quoteBox}
+			\end{addmargin}}
+%\small\color{hbrs_scheme5}\url{" * url * "}\normalsize\color{black}
+		\newcommand{\fullref}[1]{%
+			\ref{#1}\ (\small\color{hbrs_scheme5}``\protect{\nameref{#1}}''\normalsize\color{black})%
+			}%
+	% DEFINITION _________________________________
+
+	\newcommand{\AddDefinition}[3] {
+		\begin{addmargin}[0.5cm]{0.5cm}
+			\begin{quoteBox}
+				\protect\bfseries{#1}\normalfont\\\textit{``#2''{} #3}
+			\end{quoteBox}
+		\end{addmargin}}		
+
+	% HREF TO FILE _________________________________
+
+		\newcommand{\LinkFile}[2] {\href{run:#1}{#2}}
+
+	% HREF TO FILE _________________________________
+
+		\newcommand{\textSep}[1] {\bfseries #1 --- \normalfont}
+
+	% LISTINGS _________________________________
+			
+		\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
+		\definecolor{mylilas}{RGB}{170,55,241}
+				
+		\lstset{language=Matlab,%
+		basicstyle=\small,
+		    %basicstyle=\color{red},
+		    breaklines=true,%
+		    morekeywords={matlab2tikz},
+		    keywordstyle=\color{blue},%
+		    morekeywords=[2]{1}, keywordstyle=[2]{\color{black}},
+		    identifierstyle=\color{black},%
+		    stringstyle=\color{mylilas},
+		    commentstyle=\color{mygreen},%
+		    showstringspaces=false,%without this there will be a symbol in the places where there is a space
+		    numbers=left,%
+		    xleftmargin=2em,
+		    framexleftmargin=1.5em,
+		    numberstyle={\tiny \color{black}},% size of the numbers
+		    numbersep=9pt, % this defines how far the numbers are from the text
+		    emph=[1]{for,end,break},emphstyle=[1]\color{red}, %some words to emphasise
+		    %emph=[2]{word1,word2}, emphstyle=[2]{style},    
+		}
+		
+		\lstnewenvironment{pythonlisting}{
+		% Python style for highlighting
+		\lstset{
+		language=Python,
+		basicstyle=\small,
+		morekeywords={self},              % Add keywords here
+		keywordstyle=\color{drawio_blue},
+		emph={MyClass,__init__},          % Custom highlighting
+		emphstyle=\color{drawio_red},    % Custom highlighting style
+		stringstyle=\color{drawio_green},
+		frame=tb,                         % Any extra options here
+		showstringspaces=false
+		}}{}
+		
+		\lstnewenvironment{pythonfunction}{
+		\lstset{
+		language=Python,
+		breaklines=true,
+		basicstyle=\small,
+		tabsize=2,
+		numbers=none,
+		numbersep = 0pt,
+		 emph=[1]{cv},emphstyle=[1]\color{hbrs_scheme1},
+		 emph=[2]{calibrateCamera, getOptimalNewCameraMatrix, undistort, findChessboardCorners, Rodrigues}, emphstyle=[2]\bfseries\color{hbrs_scheme4},
+		 emph=[3]{objP, imgP, imgSize, patternSize}, emphstyle=[3]\color{drawio_orange},
+		 emph=[4]{mtx, dist, newmtx, dst, corners}, emphstyle=[4]\color{drawio_green},
+		 escapechar=§
+		}}{}
+		
+%\newcommand{\printpythonfunction}[1] {
+%\begin{tcolorbox}[colback=green!5!white,colframe=red!75!black]
+%\begin{pythonfunction}[style=tcblatex]
+%#1%
+%\end{pythonfunction}
+%\end{tcolorbox}
+%}
+\newcommand{\pythonfunctionBegin} {
+\begin{tcolorbox}[enhanced, colback=hbrs_scheme1!1!white,colframe=hbrs_scheme5!75!black, drop fuzzy shadow southeast]
+\begin{pythonfunction}[style=tcblatex]
+}
+\newcommand{\pythonfunctionEnd} {
+\end{pythonfunction}
+\end{tcolorbox}
+}
+
+\newcommand{\printpythonfunction}[1] {%
+%\begin{tcolorbox}[colback=green!5!white,colframe=red!75!black]%
+%\begin{singlespace}\begin{lstlisting}[style=tcblatex]%
+%#1%
+%\end{lstlisting}\end{singlespace}%
+%\end{tcolorbox}%
+\begin{pythonfunction}%
+#1%
+\end{pythonfunction}%
+}
+		
+	% TODO _________________________________
+
+	\newtcolorbox{todoBox}[1]{colback=todo_scheme!5!white,colframe=todo_scheme!75!white, leftrule=3mm,drop shadow southeast, title=ToDo,fonttitle=\bfseries}
+	\newcommand{\ToDo}[1] {
+			\begin{addmargin}[0.5cm]{0.5cm}
+				\begin{todoBox}
+					\textit{#1}
+				\end{todoBox}
+			\end{addmargin}}
+	
+	% DELIVERABLE _________________________________
+
+	\newtcolorbox{deliverableBox}[1]{enhanced, 
+	colback=drawio_green!5!white,
+	colframe=drawio_green!75!white, 
+	leftrule=15mm,
+	drop shadow southeast, 
+	title=test, 
+	detach title,
+	fonttitle=\bfseries,
+	overlay={
+        \node[minimum width=1cm, anchor=south,yshift=-0.45cm, xshift=0.8cm] at (frame.west) {\LARGE\bfseries{\faFlag}};
+    }}
+	\newcommand{\Deliverable}[1] {
+			\begin{addmargin}[0.5cm]{2.5cm}
+				\begin{deliverableBox}
+					{#1}{#1}
+				\end{deliverableBox}
+			\end{addmargin}}
+			
+			
+	% RISK _________________________________
+
+
+	\newtcolorbox{riskBox}[1]{enhanced, 
+	colback=drawio_red!5!white,
+	colframe=drawio_red!75!white, 
+	leftrule=15mm,
+	drop shadow southeast, 
+	title=test, 
+	detach title,
+	fonttitle=\bfseries,
+	overlay={
+        \node[minimum width=1cm, anchor=south,yshift=-0.5cm, xshift=0.8cm] at (frame.west) {\LARGE\bfseries{\faBolt}};
+    }}
+	\newcommand{\Risk}[1] {
+			\begin{addmargin}[0.5cm]{2.5cm}
+				\begin{riskBox}
+					{#1}{#1}
+				\end{riskBox}
+			\end{addmargin}}
+			
+	% RESUMEE _________________________________
+
+	\newtcolorbox{resumeeBox}[1]{enhanced, 
+	colback=hbrs_scheme6!10!white,
+	colframe=hbrs_scheme6!55!white, 
+	leftrule=3mm,
+	toprule=1mm,
+	bottomrule=1mm,
+	rightrule=1mm,
+	drop shadow southeast, 
+	title=Resumee,fonttitle=\bfseries, 
+	attach boxed title to top left={yshift=-8mm,yshifttext=-1mm}, 
+	boxed title style={size=small,opacityback=0, opacityframe=0},
+%	underlay boxed title={
+%\path [draw=hbrs_scheme6!55!white, line width=0.5mm, fill=hbrs_scheme4!25!white]
+%([yshift=-0.7mm, xshift=-0.5mm] title.north east) 
+%--([yshift=-0.7mm, xshift=6mm] title.north east) 
+%--([xshift=3mm] title.east)
+%--([yshift=0.7mm,  xshift=6mm] title.south east)
+%--([yshift=0.7mm,  xshift=-0.5mm] title.south east) ; }}
+underlay boxed title={
+\path [draw=hbrs_scheme6!65!white, line width=0.5mm, fill=hbrs_scheme4!25!white]
+([ xshift=-0.5mm] title.north west) 
+--([xshift=3mm] title.north east) 
+--([] title.east)
+--([xshift=3mm] title.south east)
+--([xshift=-0.5mm] title.south west) ; }}
+
+	\newcommand{\Resumee}[1] {
+			\begin{addmargin}[0.5cm]{0.5cm}
+				\begin{resumeeBox}
+					\protect\vspace{1cm}
+					\textit{#1}
+				\end{resumeeBox}
+			\end{addmargin}}
+			
+	% LAPLACE _________________________________
+			
+	\newcommand{\vlaplace}[1][]{\mbox{\setlength{\unitlength}{0.1em}%
+                            \begin{picture}(10,20)%
+                              \put(3,2){\circle{4}}%
+                              \put(3,4){\line(0,1){12}}%
+                              \put(3,18){\circle*{4}}%
+                              \put(10,7){#1}
+                            \end{picture}%
+                           }%
+                     }%
+
+\newcommand{\vLaplace}[1][]{\mbox{\setlength{\unitlength}{0.1em}%
+                            \begin{picture}(10,20)%
+                              \put(3,2){\circle*{4}}%
+                              \put(3,4){\line(0,1){12}}%
+                              \put(3,18){\circle{4}}%
+                              \put(10,7){#1}
+                            \end{picture}%
+                           }%
+                     }%  
+
+% #####################################
+% THESIS TEMPLATE (HBRS BACHELOR & MASTER)
+% Author: Ilka Salomon
+% E-Mail: ilka.salomon@gmx.de
+% #####################################

@@ -1,0 +1,78 @@
+% #####################################
+% THESIS TEMPLATE (HBRS BACHELOR & MASTER)
+% ----> 00_Main.tex
+% Author: Ilka Salomon
+% E-Mail: ilka.salomon@gmx.de
+% #####################################
+
+\input {resources/__HEADER.tex}
+% German: \detrue ; English: \entrue
+\entrue
+
+\begin{document}
+% DOCUMENT SETTINGS --------------------------------------------------------
+	
+	% Titlepage ______________________________
+
+		\title 				{Title of your Thesis!}
+		\author 			{\textbf{Martin Stute}}
+		\def\authordata		{Pferdeweg 42 \\
+				 		50769, Cologne \\
+				 		martin.stute@gmx.de \\
+				 		0221 | 12345678 }
+		\def\studentid 		{123456} 
+		\def\firstexaminer 	{Prof. Dr. First Examiner}		
+		\def\secondexaminer 	{Prof. Dr. Second Examiner}		
+					
+		 \date 			{\today}			% \today for current date
+		 \def\typeofdoc 		{Master Thesis}
+		 \def\department 	{\en 	{Department of Electrical Engineering, \\
+						 	 Mechanical Engineering and\\ 
+		 				 	 Technical Journalism (EMT)} 
+						\de 	{Fachbereich Elektrotechnik, Maschinenbau \\
+							 und Technikjournalismus (EMT)} \\}	
+		 \def\relations		{\bfseries{Ford Werke GmbH | V}\normalfont{ehicle }\bfseries{E}\normalfont{valuation \& }\bfseries{V}\normalfont{erification}\normalfont}
+		 \def\logofile		{logo_hbrs_svg}
+		 \def\logofilesecond	{logo_ford_svg}
+		 \def\restrictionnotice	{restriction_notice}
+	% Bibliographies Styles ______________________
+			
+	\bibliographystyleltex{resources/IEEE_adjusted} 
+	\bibliographystyle{resources/IEEE_adjusted}	
+	
+	% Graphics-Paths __________________________
+
+	\graphicspath{{figures/}} 
+	\renewcommand{\arraystretch}{1.3}
+	% ______________________________________
+
+% CONTENTS -----------------------------------------------------------------------
+
+	% Title Page ____________________________
+
+	\input{resources/__TITLEPAGE.tex}
+	\pagestyle {normalpage}	
+	\glsunsetall
+	
+	% Table of Contents/Figures/Tables/Listings __
+	\input{resources/__TOCS.tex}
+	\pagestyle {normalpage}	
+	\glsresetall
+
+	% Content from Generator File _____________
+	\input{content/generator}
+	
+	% Bibs _________________________________
+	\input{resources/__BIB.tex}
+		
+	% Thesis Assertion ______________________
+	\input{content/99_Erklaerung.tex}
+	
+	
+\end{document}
+
+% #####################################
+% THESIS TEMPLATE (HBRS BACHELOR & MASTER)
+% Author: Ilka Salomon
+% E-Mail: ilka.salomon@gmx.de
+% #####################################

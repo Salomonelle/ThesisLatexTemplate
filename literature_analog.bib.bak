@@ -1,0 +1,667 @@
+% Encoding: UTF-8
+
+@Book{Huber2013,
+  author    = {Huber, T.C.},
+  publisher = {Galileo Press},
+  title     = {Windows Presentation Foundation 4.5: das umfassende Handbuch},
+  year      = {2013},
+  isbn      = {9783836219563},
+  series    = {Galileo computing},
+  url       = {https://books.google.de/books?id=mTOdMAEACAAJ},
+  urldate   = {Mar. 03, 2023},
+}
+
+@Book{Huber2019,
+  author    = {Huber, Thomas Claudius},
+  publisher = {Rheinwerk Verlag GmbH},
+  title     = {Windows Presentation Foundation},
+  year      = {2019},
+  isbn      = {978-3-8362-7201-8},
+  date      = {2019-10-15},
+  ean       = {9783836272018},
+  pagetotal = {1218},
+  url       = {https://www.ebook.de/de/product/37071765/thomas_claudius_huber_windows_presentation_foundation.html},
+  urldate   = {Mar. 03, 2023},
+}
+
+@Book{Martin2009,
+  author    = {{Robert C. Martin}},
+  publisher = {Verlagsgruppe Hüthig Jehle Rehm GmbH},
+  title     = {{Clean Code: Refactoring, Patterns, Testen und Techniken für sauberen Code}},
+  year      = {2009},
+  isbn      = {978-3-8266-5072-7},
+}
+
+@Book{9783864916441,
+  author    = {Tilkov, Stefan and Eigenbrodt, Martin and Schreier, Silvia and Wolf, Oliver},
+  publisher = {dpunkt.verlag},
+  title     = {REST und HTTP},
+  year      = {2015},
+  isbn      = {9783864916441},
+  date      = {2015-05-06},
+  ean       = {9783864916441},
+  pagetotal = {330},
+  url       = {https://www.ebook.de/de/product/24107626/stefan_tilkov_martin_eigenbrodt_silvia_schreier_oliver_wolf_rest_und_http.html},
+  urldate   = {Mar. 05, 2023},
+}
+
+@Book{,
+  author    = {Joseph Albahari},
+  publisher = {O'Reilly Media},
+  title     = {{C\# 10 in a Nutshell}},
+  year      = {2022},
+  isbn      = {9781098121921},
+  month     = feb,
+}
+
+@Book{9783446469303,
+  author    = {Kotz, Jürgen},
+  publisher = {Carl Hanser Verlag GmbH \& Co. KG},
+  title     = {C\# und .NET 6 – Grundlagen, Profiwissen und Rezepte},
+  year      = {2022},
+  isbn      = {9783446469303},
+  ean       = {9783446469303},
+  pagetotal = {1024},
+}
+
+@Book{9781789340761,
+  author    = {Burns, Sean},
+  publisher = {Packt Publishing},
+  title     = {Hands-On Network Programming with C\# and .NET Core},
+  year      = {2019},
+  isbn      = {9781789340761},
+  date      = {2019-03-28},
+  ean       = {9781789340761},
+  pagetotal = {488},
+  url       = {https://www.ebook.de/de/product/36325383/sean_burns_hands_on_network_programming_with_c_and_net_core.html},
+  urldate   = {Mar. 03, 2023},
+}
+
+@Bachelorsthesis{Salomon2020,
+  author  = {Ilka Salomon},
+  journal = {Ford Motor Company},
+  month   = mar,
+  note    = {[CONFIDENTIAL]},
+  school  = {Hochschule Bonn-Rhein-Sieg - University of Applied Sciences},
+  title   = {{Development of a Generic Test Device Interface for Connectivity Feature Verification in the Automotive Sector}},
+  year    = {2020},
+}
+
+@Book{9783864908149,
+  author    = {Klaus Pohl, Chris Rupp},
+  publisher = {Dpunkt.Verlag GmbH},
+  title     = {Basiswissen Requirements Engineering},
+  year      = {2021},
+  isbn      = {978-3-86490-814-9},
+  date      = {2021-04-01},
+  ean       = {9783864908149},
+  url       = {https://www.ebook.de/de/product/39842397/klaus_pohl_chris_rupp_basiswissen_requirements_engineering.html},
+  urldate   = {Feb. 02, 2023},
+}
+
+@Book{9783658292591,
+  author    = {Schwenk, Jörg},
+  publisher = {Springer-Verlag GmbH},
+  title     = {Sicherheit und Kryptographie im Internet},
+  year      = {2020},
+  isbn      = {978-3-658-29259-1},
+  date      = {2020-10-07},
+  ean       = {9783658292591},
+  url       = {https://www.ebook.de/de/product/38521698/joerg_schwenk_sicherheit_und_kryptographie_im_internet.html},
+  urldate   = {Mar. 18, 2023},
+}
+
+@Diplomasthesis{Woiczik2009,
+  author = {Sebastian Woiczik},
+  month  = oct,
+  note   = {[CONFIDENTIAL]},
+  school = {Hochschule Bonn-Rhein-Sieg - University of Applied Sciences},
+  title  = {{Effizienzsteigerung eines Testprozesses durch Entwicklung einer Software-Umgebung und Einbindung in eine bestehende Testlandschaft}},
+  year   = {2009},
+}
+
+@Book{alma991005702820706452,
+  author    = {Wilson, Chauncey.},
+  publisher = {Morgan Kaufmann},
+  title     = {Interview techniques for UX practitioners : a user-centered design method},
+  year      = {2014},
+  address   = {Waltham, MA},
+  edition   = {1st edition},
+  isbn      = {0-12-410450-9},
+  abstract  = {Much of the work of user-centered design practitioners involves some type of interviewing. While interviewing is an important skill, many colleagues have little or no formal training in interviewing methods and often learn on the job with limited feedback on the quality of their interviews.   This book teaches readers about the three basic interview methods: structured interviews, semi-structured interviews, and unstructured interviews. The author discusses the various strengths, weaknesses, issues with each type of interview, and includes best practices and procedures for conducing effectiv},
+  booktitle = {Interview techniques for UX practitioners : a user-centered design method},
+  keywords  = {Interviewing},
+  language  = {eng},
+}
+
+@Projectsthesis{Mueller2021a,
+  author  = {Andreas Dominik Müller},
+  journal = {Ford Motor Company},
+  month   = dec,
+  note    = {[CONFIDENTIAL]},
+  school  = {Rheinische Fachhochschule Köln},
+  title   = {{Untersuchung und Vergleich verschiedener Systemkonzepte zur Software-Verifikation in der Automobilindustrie}},
+  year    = {2020},
+}
+
+@InProceedings{Mathur2014,
+  author       = {Rohit Mathur, Ritesh Saraswat, Gunjan Mathur},
+  title        = {{An Analytical Study of Communication ProtocolsUsed in Automotive Industry}},
+  year         = {2014},
+  month        = jul,
+  organization = {Department of Electronics and CommunicationJodhpur Institute of Engineering and TechnologyJodhpur, India},
+  pages        = {287--292},
+  publisher    = {IJERT},
+  volume       = {ETRASCT – 2014 (Volume 2 – Issue 03)},
+  doi          = {10.17577/IJERTCONV2IS03044},
+  issn         = {2278-0181},
+  url          = {https://www.ijert.org/research/an-analytical-study-of-communication-protocols-used-in-automotive-industry-IJERTCONV2IS03044.pdf},
+  urldate      = {Aug. 31, 2023},
+}
+
+@InProceedings{10.1007/978-3-319-59767-6_31,
+  author    = {Neumann, Arne and Mytych, Martin Jan and Wesemann, Derk and Wisniewski, Lukasz and Jasperneite, J{\"u}rgen},
+  booktitle = {Computer Networks},
+  title     = {Approaches for In-vehicle Communication -- An Analysis and Outlook},
+  year      = {2017},
+  address   = {Cham},
+  editor    = {Gaj, Piotr and Kwiecie{\'{n}}, Andrzej and Sawicki, Micha{\l}},
+  pages     = {395--411},
+  publisher = {Springer International Publishing},
+  abstract  = {Electrical and electronic systems have been getting raising importance for innovations in the automotive industry. Networking issues are a key factor in this process since they enable distributed control functions and user interaction bringing together nodes from different vendors. This paper analyses available and emerging network technologies for in-vehicle communication from a requirements driven perspective. It reviews successful network technologies from other application areas regarding a possible deployment in vehicular communication and distinguishes passenger car and commercial vehicle sectors as far as possible. This contribution is oriented to the OSI reference model showing the state of the art and future opportunities at the level of the several communication layers with a focus on physical layer issues and medium access protocols and including information modeling aspects.},
+  isbn      = {978-3-319-59767-6},
+  url       = {https://www.init-owl.de/fileadmin/user_upload/datenbank/publikationen/ComInVehicles.pdf},
+  urldate   = {Aug. 31, 2023},
+}
+
+@PhdThesis{fielding2000,
+  author    = {Fielding, Roy Thomas},
+  school    = {University of California, Irvine},
+  title     = {Architectural styles and the design of network-based software architectures},
+  year      = {2000},
+  added-at  = {2019-05-12T17:00:51.000+0200},
+  biburl    = {https://www.bibsonomy.org/bibtex/2c5fbfdf47178850ca7cbc0851bfcc95f/jjehannet},
+  file      = {:../media/diverzulu/DADOS/ASUS-FINO/Inkhognito_M/David/PhD/Web Semântica/Background on Semantic Web/Arquitectura Software/2000-PhD-Thesis-Roy Fielding-Architectural Styles and the Design of Network-based Software Architectures.pdf:PDF},
+  interhash = {833ffb7e240120036017a40097125555},
+  intrahash = {c5fbfdf47178850ca7cbc0851bfcc95f},
+  keywords  = {rest service web},
+  timestamp = {2019-05-12T17:08:15.000+0200},
+  url       = {https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm},
+  urldate   = {Aug. 01, 2023},
+}
+
+@Article{Hamel2019,
+  author  = {Jeffrey Hamel},
+  journal = {Ford Research Laboratory Technical Support},
+  title   = {{SRR-2019-0139: FNV2 API \& Engines - Web Browsing and Video Streaming}},
+  year    = {2019},
+  month   = oct,
+  note    = {[CONFIDENTIAL]},
+  pages   = {5},
+  comment = {CONFIDENTIAL},
+  url     = {https://www.rlis.ford.com/techreports/publication/2019/srr-2019-0139/srr-2019-0139.pdf},
+  urldate = {Feb. 01, 2023},
+}
+
+@Article{KurtOsbone2022,
+  author  = {Kurt Osbone; {et. al.}},
+  journal = {Ford Research Laboratory Technical Support},
+  title   = {{SRR-2022-0037: FNV4 Fully Networked Vehicle Electrical System Architecture Specification}},
+  year    = {2022},
+  month   = feb,
+  note    = {[CONFIDENTIAL]},
+  pages   = {297},
+  comment = {CONFIDENTIAL},
+  url     = {https://www.rlis.ford.com/techreports/publication/2022/srr-2022-0037/srr-2022-0037.pdf},
+  urldate = {Feb. 01, 2023},
+}
+
+@Article{Watters2017,
+  author  = {Brock Watters; David Berels},
+  journal = {Ford Research Laboratory Technical Support},
+  title   = {{SRR-2017-0149: Fully Networked Vehicle 2 Electrical Architecture}},
+  year    = {2017},
+  month   = jun,
+  note    = {[CONFIDENTIAL]},
+  pages   = {65},
+  comment = {CONFIDENTIAL},
+  url     = {https://www.rlis.ford.com/techreports/publication/2017/srr-2017-0149/srr-2017-0149.pdf},
+  urldate = {Feb. 01, 2023},
+}
+
+@Article{Watters2017a,
+  author  = {Brock Watters; David Berels},
+  journal = {Ford Research Laboratory Technical Support},
+  title   = {{SRR-2017-0205: Information Architecture}},
+  year    = {2017},
+  month   = oct,
+  note    = {[CONFIDENTIAL]},
+  pages   = {25},
+  comment = {CONFIDENTIAL},
+  url     = {https://www.rlis.ford.com/techreports/publication/2017/srr-2017-0205/srr-2017-0205.pdf},
+  urldate = {Feb. 01, 2023},
+}
+
+@Article{DavidBerels2019,
+  author  = {David Berels; {et. al.}},
+  journal = {Ford Research Laboratory Technical Support},
+  title   = {{SRR-2020-0030: Towards Design of Sustainable Smart Mobility Services through Transportation Mobility Cloud (TMC)}},
+  year    = {2020},
+  month   = nov,
+  note    = {[CONFIDENTIAL]},
+  pages   = {25},
+  comment = {CONFIDENTIAL},
+  url     = {https://www.rlis.ford.com/techreports/publication/2020/srr-2020-0030/srr-2020-0030.pdf},
+  urldate = {Feb. 01, 2023},
+}
+
+@Article{Meroux2019,
+  author  = {Dominique Meroux; {et. al.}},
+  journal = {Ford Research Laboratory Technical Support},
+  title   = {{SRR-2019-0177: FNV4 Fully Networked Vehicle Architecture}},
+  year    = {2019},
+  month   = jan,
+  note    = {[CONFIDENTIAL]},
+  pages   = {24},
+  comment = {CONFIDENTIAL},
+  url     = {https://www.rlis.ford.com/techreports/publication/2019/srr-2019-0177/srr-2019-0177.pdf},
+  urldate = {Feb. 01, 2023},
+}
+
+@Article{ALTAWG2016,
+  author  = {{Advanced Level Test Automation Working Group, Bryan Bakker, Graham Bath, Armin Born, Mark Fewster,Jani Haukinen, Judy McKay, Andrew Pollner, Raluca Popescu and Ina Schieferdecker}},
+  journal = {ISTQB ®},
+  title   = {{Certified TesterAdvanced Level SyllabusTest Automation Engineer}},
+  year    = {2016},
+  url     = {https://astqb.org/assets/documents/Advanced-Test-Automation-Engineer-Syllabus-GA-2016.pdf},
+  urldate = {Aug. 13, 2023},
+}
+
+@Article{ISTQB2021,
+  author  = {{International Software Testing Qualifications Board}},
+  journal = {ISTQB ®},
+  title   = {Certified TesterFoundation Level (CTFL) Syllabus},
+  year    = {2021},
+  month   = jul,
+  pages   = {93},
+  volume  = {Version 2018 v3.1.1},
+  url     = {https://istqb-main-web-prod.s3.amazonaws.com/media/documents/ISTQB-CTFL_Syllabus_2018_v3.1.1.pdf},
+  urldate = {Aug. 28, 2023},
+}
+
+@Lecture{Gross2019,
+  author = {Ingo Groß},
+  school = {Hochschule Bonn-Rhein-Sieg - University of Applied Sciences},
+  title  = {{Vorlesung Steuerungstechnik Master Skript}},
+  year   = {2019},
+}
+
+@Lecture{Rothe2020,
+  author  = {Irene Rothe},
+  journal = {Lecture Embedded Systems},
+  school  = {Hochschule Bonn-Rhein-Sieg - University of Applied Sciences},
+  title   = {Objektorientierte Analyse \& Design},
+  year    = {2020},
+}
+
+@Lecture{Rothe2020a,
+  author  = {Irene Rothe},
+  journal = {Lecture Embedded Systems},
+  school  = {Hochschule Bonn-Rhein-Sieg - University of Applied Sciences},
+  title   = {Einführung in die Ideen von OO mit einem Beispiel},
+  year    = {2020},
+}
+
+@Lecture{Breuer2019,
+  author = {{Prof. Thomas} Breuer},
+  school = {Hochschule Bonn-Rhein-Sieg - University of Applied Sciences},
+  title  = {{Embedded Systems Seminar 2: Architektur und Programmierung Skript}},
+  year   = {2019},
+}
+
+@Article{EcgProvisioningSpss,
+  author  = {{Ford Motor Company}},
+  journal = {Ford Motor Company},
+  title   = {{Feature – ECG Provisioning Version 1.8 | Enhanced Central Gateway (ECG) Infotainment Subsystem Part Specific Specification (SPSS)}},
+  year    = {2023},
+  month   = mar,
+  note    = {[CONFIDENTIAL]},
+  day     = {4},
+  url     = {https://azureford.sharepoint.com/sites/ISDV_Specification/DataforUserstoriesFeatures/Forms/AllItems.aspx?csf=1&web=1&e=3gh7Wa&cid=42bb93fe%2D824b%2D468d%2D8e81%2D889a609606ad&FolderCTID=0x012000C4CB34C29009074D86F62B02A185C352&id=%2Fsites%2FISDV%5FSpecification%2FDataforUserstoriesFeatures%2FSPSS%2FECG%2FECG%20Provisioning%2Fv1%2E8%2FECG%20Provisioning%20ECG%20SPSS%20v1%2E8%20Mar%204%2C%202023%2Epdf&viewid=0ac0ce89%2Dde0f%2D43b7%2Db617%2D04bc9303f86a&parent=%2Fsites%2FISDV%5FSpecification%2FDataforUserstoriesFeatures%2FSPSS%2FECG%2FECG%20Provisioning%2Fv1%2E8},
+  urldate = {Apr. 11, 2023},
+}
+
+@Article{TcuCommonFktnSpss,
+  author  = {{Ford Motor Company}},
+  journal = {Ford Motor Company},
+  title   = {{Feature – Embedded Modem Common Functions Version 1.4 | Telematics Control Unit (TCU) Infotainment Subsystem Part Specific Specification (SPSS)}},
+  year    = {2016},
+  month   = sep,
+  note    = {[CONFIDENTIAL]},
+  day     = {21},
+  url     = {https://azureford.sharepoint.com/sites/ISDV_Specification/DataforUserstoriesFeatures/Forms/AllItems.aspx?csf=1&web=1&e=3gh7Wa&cid=42bb93fe%2D824b%2D468d%2D8e81%2D889a609606ad&FolderCTID=0x012000C4CB34C29009074D86F62B02A185C352&id=%2Fsites%2FISDV%5FSpecification%2FDataforUserstoriesFeatures%2FSPSS%2FECG%2FECG%20Provisioning%2Fv1%2E8%2FECG%20Provisioning%20ECG%20SPSS%20v1%2E8%20Mar%204%2C%202023%2Epdf&viewid=0ac0ce89%2Dde0f%2D43b7%2Db617%2D04bc9303f86a&parent=%2Fsites%2FISDV%5FSpecification%2FDataforUserstoriesFeatures%2FSPSS%2FECG%2FECG%20Provisioning%2Fv1%2E8},
+  urldate = {Apr. 11, 2023},
+}
+
+@Article{TcuProvisioningSpss,
+  author  = {{Ford Motor Company}},
+  journal = {Ford Motor Company},
+  title   = {{Feature – Embedded Modem Provisioning 1.5 | Telematics Control Unit (TCU) Infotainment Subsystem Part Specific Specification (SPSS)}},
+  year    = {2020},
+  month   = jan,
+  note    = {[CONFIDENTIAL]},
+  day     = {10},
+  url     = {https://azureford.sharepoint.com/sites/ISDV_Specification/DataforUserstoriesFeatures/Forms/AllItems.aspx?csf=1&web=1&e=3gh7Wa&cid=42bb93fe%2D824b%2D468d%2D8e81%2D889a609606ad&FolderCTID=0x012000C4CB34C29009074D86F62B02A185C352&id=%2Fsites%2FISDV%5FSpecification%2FDataforUserstoriesFeatures%2FSPSS%2FTCU2%2FEmbedded%20Modem%20Provisioning%2FVer%201%2E5%2FEmbedded%20Modem%20Provisioning%20TCU%20SPSS%20v1%2E5%20January%2010%2C%202020%2Epdf&viewid=0ac0ce89%2Dde0f%2D43b7%2Db617%2D04bc9303f86a&parent=%2Fsites%2FISDV%5FSpecification%2FDataforUserstoriesFeatures%2FSPSS%2FTCU2%2FEmbedded%20Modem%20Provisioning%2FVer%201%2E5},
+  urldate = {Apr. 11, 2023},
+}
+
+@Article{TcuProvisioningV2Spss,
+  author  = {{Ford Motor Company}},
+  journal = {Ford Motor Company},
+  title   = {{Feature – Embedded Modem Provisioning v2 1.7 | Telematics Control Unit (TCU) Infotainment Subsystem Part Specific Specification (SPSS)}},
+  year    = {2021},
+  month   = nov,
+  note    = {[CONFIDENTIAL]},
+  day     = {16},
+  url     = {https://azureford.sharepoint.com/sites/ISDV_Specification/DataforUserstoriesFeatures/Forms/AllItems.aspx?csf=1&web=1&e=3gh7Wa&cid=42bb93fe%2D824b%2D468d%2D8e81%2D889a609606ad&FolderCTID=0x012000C4CB34C29009074D86F62B02A185C352&id=%2Fsites%2FISDV%5FSpecification%2FDataforUserstoriesFeatures%2FSPSS%2FTCU2%2FEmbedded%20Modem%20Provisioning%20v2%2Fv1%2E7%2FEmbedded%20Modem%20Provisioning%20v2%20SPSS%20v1%2E7%20November%2016%2C%202021%2Epdf&viewid=0ac0ce89%2Dde0f%2D43b7%2Db617%2D04bc9303f86a&parent=%2Fsites%2FISDV%5FSpecification%2FDataforUserstoriesFeatures%2FSPSS%2FTCU2%2FEmbedded%20Modem%20Provisioning%20v2%2Fv1%2E7},
+  urldate = {Apr. 11, 2023},
+}
+
+@Article{MobileAppAuth,
+  author  = {{Ford Motor Company}},
+  journal = {Ford Motor Company},
+  title   = {{Mobile App -Authorization, Deauthorization}},
+  year    = {2021},
+  month   = sep,
+  note    = {[CONFIDENTIAL]},
+  day     = {15},
+  url     = {https://www.eesewiki.ford.com/display/ec/EV+-+Earn+-+Modem+Activation?preview=%2F634095740%2F747177967%2FAuth_Deauth-AWD.pdf},
+  urldate = {Apr. 12, 2023},
+}
+
+@Article{FeatureEnrollmenttEnablementFs,
+  author  = {{Ford Motor Company}},
+  journal = {Ford Motor Company},
+  title   = {{Functional Specification | Feature Enrollment / Enrablement}},
+  year    = {2022},
+  month   = aug,
+  note    = {[CONFIDENTIAL]},
+  day     = {5},
+  url     = {https://www.eesewiki.ford.com/pages/viewpage.action?pageId=764356720&preview=%2F764356720%2F859545903%2FEnrollment_FS+v1.1.pdf},
+  urldate = {Apr. 13, 2023},
+}
+
+@Article{DataExplorerWebsite,
+  author  = {{Ford Motor Company}},
+  journal = {Ford Motor Company},
+  title   = {{DataExplorer}},
+  year    = {2023},
+  month   = may,
+  note    = {[CONFIDENTIAL]},
+  day     = {21},
+  url     = {https://dataexplorer.ec.ford.com/},
+  urldate = {Apr. 13, 2023},
+}
+
+@Article{FMC2023,
+  author  = {{Ford Motor Company}},
+  title   = {{FordPass Android App}},
+  year    = {2023},
+  url     = {https://play.google.com/store/apps/details?id=com.ford.fordpasseu&hl=de&gl=US&pli=1},
+  urldate = {Aug. 31, 2023},
+}
+
+@Article{FontAwesome,
+  author  = {Gammasoft},
+  journal = {GitHub},
+  title   = {{Fat Cow Free Icons}},
+  year    = {2014},
+  month   = dec,
+  url     = {http://www.fatcow.com/free-icons},
+  urldate = {Aug. 03, 2023},
+}
+
+@Article{InternetSociety2014,
+  author  = {{The Internet Society, Network Working Group}},
+  title   = {{RFC 7230: Hypertext Transfer Protocol -- Http/1.1}: Message Syntax and Routing},
+  year    = {2014},
+  month   = jun,
+  url     = {https://datatracker.ietf.org/doc/html/rfc7230/},
+  urldate = {Aug. 29, 2023},
+}
+
+@Article{InternetSociety1999,
+  author  = {{The Internet Society, Network Working Group}},
+  title   = {{RFC 2616: Hypertext Transfer Protocol -- Http/1.1}},
+  year    = {1999},
+  month   = jun,
+  url     = {https://datatracker.ietf.org/doc/html/rfc2616/},
+  urldate = {Aug. 29, 2023},
+}
+
+@Article{InternetSociety2014b,
+  author  = {{The Internet Society, Network Working Group}},
+  title   = {{RFC 7231: Hypertext Transfer Protocol -- Http/1.1}: Semantics and Content},
+  year    = {2014},
+  month   = jun,
+  url     = {https://datatracker.ietf.org/doc/html/rfc7231/},
+  urldate = {Aug. 29, 2023},
+}
+
+@Article{Hwaci2023,
+  author  = {Hwaci},
+  title   = {About SQLite},
+  year    = {2023},
+  url     = {https://www.sqlite.org/about.html},
+  urldate = {Aug. 31, 2023},
+}
+
+@Article{JGraph2023,
+  author  = {{JGraph Ltd.}},
+  title   = {draw.io},
+  year    = {2023},
+  url     = {https://www.drawio.com/},
+  urldate = {Aug. 24, 2023},
+}
+
+@Article{Mai2022,
+  author  = {Jochen Mai},
+  journal = {Karrierebibel},
+  title   = {{ABC Analyse: Berechnen, Beispiele + Zeitmanagement}},
+  year    = {2022},
+  month   = apr,
+  url     = {https://karrierebibel.de/abc-analyse/},
+}
+
+@Article{MDT2023,
+  author  = {{Matplotlib Development Team}},
+  journal = {Matplotlib Docs},
+  title   = {matplotlib.pyplot.boxplot},
+  year    = {2023},
+  url     = {https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.boxplot.html},
+  urldate = {Aug. 28, 2023},
+}
+
+@Article{VEVSharedCode,
+  author  = {{VEV - EE-Testing Tool Team}},
+  journal = {Ford Motor Company},
+  title   = {{Source Code SharedCode}},
+  year    = {2023},
+}
+
+@Article{VEVSATAXa,
+  author  = {{VEV - EE-Testing Tool Team}},
+  journal = {Ford Motor Company},
+  title   = {{SATA.X - Semi Automated Testing Application X}},
+  year    = {2023},
+}
+
+@Article{VEVTMTv3,
+  author  = {{VEV - EE-Testing Tool Team}},
+  journal = {Ford Motor Company},
+  title   = {{Source Code TMTv3 (Test Management Tool v3)}},
+  year    = {2023},
+}
+
+@Article{VEVSEv3,
+  author  = {{VEV - EE-Testing Tool Team}},
+  journal = {Ford Motor Company},
+  title   = {{Source Code SEv3 (Sequence Editor v3)}},
+  year    = {2023},
+}
+
+@Lecture{CVFTE2023,
+  author = {{VEV - EE-Testing Connected Vehicle Feature Test Engineers}},
+  school = {Ford Werke GmbH},
+  title  = {{Connected Vehicle Feature Testing; Cloud Systems Functions and Features}},
+  type   = {Interview, Topic},
+  year   = {2023},
+}
+
+@Article{VETTT2023,
+  author  = {{VEV - EE-Testing Tool Team}},
+  journal = {Ford Motor Company},
+  title   = {Test Request Database Export},
+  year    = {2023},
+}
+
+@Article{VETTT2022,
+  author  = {{VEV - EE-Testing Connected Vehicle Feature Test Engineer}},
+  journal = {Ford Motor Company},
+  title   = {Browser History Data of a Connected Vehicle Feature Test Engineer},
+  year    = {2022},
+}
+
+@Article{CPT2020,
+  author  = {{CVP\&P Platform Team}},
+  journal = {Ford Motor Company},
+  title   = {Ford Telematics Communication Protocol (FTCP)},
+  year    = {2020},
+  month   = jun,
+  note    = {[CONFIDENTIAL]},
+  url     = {https://www.eesewiki.ford.com/display/ecg/FTCP+integration?preview=%2F44676906%2F240818900%2FFord+Telematics+Communication+Protocol+Specification+6.0.14.pdf},
+  urldate = {Aug. 28, 2023},
+}
+
+@Book{Martin2009a,
+  author    = {Robert Martin},
+  editor    = {Feathers, Michael},
+  publisher = {Heidelberg, Germany : MITP},
+  title     = {Clean code : Refactoring, Patterns, Testen und Techniken fur Sauberen Code},
+  year      = {2009},
+  isbn      = {3-8266-9638-7},
+  url       = {https://learning.oreilly.com/library/view/clean-code/9783826655487/Text/final_stage2_09.htm#sigil_toc_id_141},
+  urldate   = {Sep. 01, 2023},
+}
+
+@Article{Bianco2007,
+  author  = {Phil Bianco, Rick Kotermanski, Paulo Merson},
+  journal = {Software Architecture Technology Initiative},
+  title   = {Evaluating a Service-OrientedArchitecture},
+  year    = {2007},
+  url     = {https://resources.sei.cmu.edu/asset_files/TechnicalReport/2007_005_001_14894.pdf},
+  urldate = {Sep. 05, 2023},
+}
+
+@Article{CvbopWebsite,
+  author  = {{Ford Motor Company}},
+  journal = {Ford},
+  title   = {{CVBOP - Cloud Vehicle Business Operations Portal}},
+  year    = {2023},
+  month   = may,
+  note    = {[CONFIDENTIAL]},
+  day     = {21},
+  url     = {https://www.cvbop.ford.com/},
+  urldate = {Apr. 13, 2023},
+}
+
+@Article{Laskey2009,
+  author   = {Laskey, Kathryn B. and Laskey, Kenneth},
+  journal  = {WIREs Computational Statistics},
+  title    = {Service oriented architecture},
+  year     = {2009},
+  number   = {1},
+  pages    = {101-105},
+  volume   = {1},
+  abstract = {Abstract Service oriented architecture (SOA) is a paradigm for organizing a set of capabilities, often distributed across the network and possibly under the control of different ownership domains. The organized capabilities can be used to provide solutions to business problems. A business problem is broadly defined as any problem, in any domain of interest, encountered by an individual or organization as it goes about its business. SOA is applied to business problems that are amenable to information technology solutions. Services are made visible to potential users, interact with users through a series of information exchanges, and produce real-world effects. Invocation and information exchange rely on standard languages and protocols that facilitate interoperability. From a user's perspective, invoking a service to produce an intended effect is experienced as a single, atomic operation. The detailed sequence of actions carried out by the service may involve any number of operations such as database queries, data transformations, execution of models, and formatting of displays. These operations may themselves be composed of lower level operations. The data and/or software modules required to perform the operations may reside at different physical locations and be controlled by different organizations. The details of composing the sequence of actions that produces the real world effect are transparent to the user interacting with the service. SOA frees users to concentrate on their business problem, leaving the details of the solution to the service. Copyright © 2009 John Wiley \& Sons, Inc. This article is categorized under: Software for Computational Statistics > Software/Statistical Software},
+  doi      = {https://doi.org/10.1002/wics.8},
+  eprint   = {https://wires.onlinelibrary.wiley.com/doi/pdf/10.1002/wics.8},
+  keywords = {service oriented architecture, web services, distributed computing, publish-find-bind triangle, metadata},
+  url      = {https://wires.onlinelibrary.wiley.com/doi/abs/10.1002/wics.8},
+  urldate  = {Sep. 10, 2023},
+}
+
+@Bachelorsthesis{Bloschak2021,
+  author  = {Kai Bloschak},
+  journal = {Ford Motor Company},
+  month   = apr,
+  note    = {[CONFIDENTIAL]},
+  school  = {Hochschule Bonn-Rhein-Sieg - University of Applied Sciences},
+  title   = {Konzept und Implementierung einer neuen grafischen Benutzerschnittstelle in der Ford Testsequenz-Design-Software "Sequence Editor V3"},
+  year    = {2021},
+}
+
+@Bachelorsthesis{Boehm2023,
+  author  = {Theresa Böhm},
+  journal = {Ford Motor Company},
+  month   = mar,
+  note    = {[CONFIDENTIAL]},
+  school  = {Hochschule Bonn-Rhein-Sieg - University of Applied Sciences},
+  title   = {Implementierung eines Software-Moduls für das Monitoring KFZ Relevanter Signale},
+  year    = {2023},
+}
+
+@Article{VEVSATAX,
+  author  = {{VEV - EE-Testing Tool Team}},
+  journal = {Ford Motor Company},
+  title   = {{Source Code SATA.X (Semi Automated Testing Application X)}},
+  year    = {2023},
+}
+
+@Article{VEVTMTv3a,
+  author  = {{VEV - EE-Testing Tool Team}},
+  journal = {Ford Motor Company},
+  title   = {{TMTv3 - Test Management Tool v3}},
+  year    = {2023},
+}
+
+@Article{VEVSEv3a,
+  author  = {{VEV - EE-Testing Tool Team}},
+  journal = {Ford Motor Company},
+  title   = {{SEv3 - Sequence Editor v3}},
+  year    = {2023},
+}
+
+@Book{Nilsson2006,
+  author = {Jimmy Nilsson},
+  title  = {Applying Domain-Driven Design and Patterns - With Examples in C\# and .NET},
+  year   = {2006},
+  isbn   = {978-0-321-26820-4},
+}
+
+@Bachelorsthesis{Mueller2021,
+  author  = {Andreas Dominik Müller},
+  journal = {Ford Motor Company},
+  month   = dec,
+  note    = {[CONFIDENTIAL]},
+  school  = {Rheinische Fachhochschule Köln},
+  title   = {{Entwicklung und Analyse eines verbesserten Konzepts zur Software-Verifikation in Hinblick auf Modularisierung und Automatisierung in der Automobilindustrie}},
+  year    = {2020},
+}
+
+@Lecture{CVFTE2023a,
+  author = {{VEV - EE-Testing Connected Vehicle Feature Test Engineers}},
+  school = {Ford Werke GmbH},
+  title  = {{User Feedback to SATA.X Test Versions}},
+  type   = {Interview, Topic},
+  year   = {2023},
+}
+
+@Article{VETTT2022a,
+  author  = {{VEV - EE-Testing Connected Vehicle Feature Test Engineer}},
+  journal = {Ford Motor Company},
+  title   = {User Interview Results},
+  year    = {2022},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}

@@ -1,0 +1,335 @@
+% Encoding: UTF-8
+
+@Article{FMC2017,
+  author  = {{Ford Motor Company}},
+  journal = {Ford Media Center},
+  title   = {{Die Kölner Ford-Werke Im Überblick}},
+  year    = {2017},
+  url     = {https://media.ford.com/content/fordmedia/feu/de/de/media-kits/2021/die-koelner-ford-werke-im-ueberblick.html},
+  urldate = {Jul. 13, 2023},
+}
+
+@Article{Postman2022,
+  author  = {{Postman, Inc.}},
+  title   = {{Postman Documentation}},
+  year    = {2022},
+  url     = {https://learning.postman.com/docs/getting-started/introduction/},
+  urldate = {Feb. 24, 2023},
+}
+
+@Article{Autonomic2022,
+  author  = {Autonomic},
+  title   = {{TMC Developer - Getting Started}},
+  year    = {2022},
+  url     = {https://www.developer.autonomic.ai/},
+  urldate = {Feb. 21, 2023},
+}
+
+@Article{RedMonkQ12023,
+  author  = {RedMonk},
+  title   = {{The RedMonk Programming Language Rankings: January 2023}},
+  year    = {2023},
+  url     = {https://redmonk.com/sogrady/2023/05/16/language-rankings-1-23/},
+  urldate = {Aug. 23, 2023},
+}
+
+@Article{Peterjohann2019,
+  author  = {Horst Peterjohann},
+  journal = {Peterjohann Consulting},
+  title   = {{Lastenheft und Pflichtenheft}},
+  year    = {2019},
+  month   = apr,
+  url     = {https://www.peterjohann-consulting.de/lastenheft-und-pflichtenheft/},
+}
+
+@Article{FordApiCatalog,
+  author  = {Ford},
+  journal = {Ford},
+  title   = {{Ford API Catalog}},
+  year    = {2022},
+  note    = {[CONFIDENTIAL]},
+  url     = {https://www.apicatalog.ford.com/},
+  urldate = {Feb. 20, 2023},
+}
+
+@Article{Company2023,
+  author  = {{Ford Motor Company}},
+  journal = {Ford},
+  title   = {{FordPass App}},
+  year    = {2023},
+  url     = {https://www.ford.de/technologie/konnektivitaet/fordpass?searchid=ppc:DEU-FordEvents-FordPass-Exact:FordPass-Exact:fordpass:e:c:g:GOOGLE&gclid=Cj0KCQjw8e-gBhD0ARIsAJiDsaWiokA8A5rirTCZwmrqrNLZvmTE_UP51xAvmXiLJs90pfqvdEnDWvgaAryFEALw_wcB&gclsrc=aw.ds},
+  urldate = {Jun. 01, 2023},
+}
+
+@Article{SspWebsite,
+  author  = {{Ford Motor Company}},
+  journal = {Ford},
+  title   = {{Subscription Services platform - SSP}},
+  year    = {2023},
+  month   = mar,
+  note    = {[CONFIDENTIAL]},
+  day     = {20},
+  url     = {https://azureford.sharepoint.com/sites/ConnectedVehicle/SiteAssets/Pages%20from%20Github/SSP.aspx#project-description-section},
+  urldate = {Apr. 13, 2023},
+}
+
+@Article{TutorialsTeacher.com2023,
+  author  = {TutorialsTeacher.com},
+  title   = {Learn Inversion of Control (IoC) Principle},
+  year    = {2023},
+  url     = {https://www.tutorialsteacher.com/ioc/},
+  urldate = {May 03, 2023},
+}
+
+@Article{VMS2023,
+  author  = {{Vanguard Management Systems}},
+  title   = {Management System Guidance - Quality Manual},
+  year    = {2023},
+  url     = {https://www.iso9001help.co.uk/quality-manual.html},
+  urldate = {Jun. 20, 2023},
+}
+
+@Article{TUV2021,
+  author  = {{TÜV SÜD Management Service GmbH}},
+  title   = {Quality at a glance - ISO 9001:2015 GuidanceUpdated version 2021},
+  year    = {2021},
+  url     = {https://www.tuvsud.com/de-de/-/media/de/management-service/pdf/iso-9001/broschuere-iso-9001-en.pdf},
+  urldate = {Jun. 20, 2023},
+}
+
+@Article{Microsoft2023,
+  author  = {Microsoft},
+  journal = {Microsoft Learn},
+  title   = {{RelayCommand und RelayCommandT<>}},
+  year    = {2023},
+  month   = mar,
+  url     = {https://learn.microsoft.com/de-de/dotnet/communitytoolkit/mvvm/relaycommand},
+  urldate = {Jul. 12, 2023},
+}
+
+@Article{CSSElectronics2023,
+  author  = {{CSS Electronics}},
+  journal = {{CSS Electronics}},
+  title   = {{CAN Bus - The Ultimate Guide}},
+  year    = {2023},
+  month   = jun,
+  pages   = {167},
+  url     = {https://www.csselectronics.com/pages/uds-protocol-tutorial-unified-diagnostic-services},
+  urldate = {Jul. 10, 2023},
+}
+
+@Article{Microsoft,
+  author  = {Microsoft},
+  journal = {Microsoft Learn},
+  title   = {{C\# Classes}},
+  year    = {2023},
+  url     = {https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/classes},
+  urldate = {Aug. 02, 2023},
+}
+
+@Article{Xceedsoftware2017,
+  author  = {Xceedsoftware},
+  journal = {GitHub Wiki},
+  title   = {AvalonDock},
+  year    = {2017},
+  month   = jun,
+  url     = {https://github.com/xceedsoftware/wpftoolkit/wiki/AvalonDock},
+  urldate = {Aug. 28, 2023},
+}
+
+@Article{Microsoft2023a,
+  author  = {{Microsoft}},
+  journal = {{Microsoft Learn}},
+  title   = {{What is Class Designer?}},
+  year    = {2023},
+  url     = {https://learn.microsoft.com/en-us/visualstudio/ide/class-designer/designing-and-viewing-classes-and-types?view=vs-2022},
+  urldate = {Aug. 05, 2023},
+}
+
+@Article{NounProject2023,
+  author  = {{Noun Project Inc.}},
+  title   = {The Noun Project - Iconset},
+  year    = {2023},
+  url     = {https://thenounproject.com/},
+  urldate = {Aug. 23, 2023},
+}
+
+@Article{Microsoft2023b,
+  author  = {Microsoft},
+  journal = {Microsoft},
+  title   = {Visual Studio 2019 Professional},
+  year    = {2023},
+  url     = {https://visualstudio.microsoft.com/de/vs/older-downloads/},
+  urldate = {Aug. 31, 2023},
+}
+
+@Article{EclipseFoundation2023,
+  author  = {{Eclipse Foundation}},
+  journal = {Eclipse},
+  title   = {Eclipse},
+  year    = {2023},
+  url     = {https://www.eclipse.org/downloads/},
+  urldate = {Aug. 31, 2023},
+}
+
+@Article{Microsoft2023c,
+  author  = {Microsoft},
+  journal = {Microsoft Learn},
+  title   = {Herunterladen von SQL Server Management Studio (SSMS)},
+  year    = {2023},
+  url     = {https://learn.microsoft.com/de-de/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16},
+  urldate = {Aug. 31, 2023},
+}
+
+@Article{IGWG2021,
+  author  = {{ISTQB Glossary Working Group, Matthias Hamburg (Chair) and Armin Born (Vice-Chair)}},
+  journal = {ISTQB ®},
+  title   = {{ISTQB Glossary}},
+  year    = {2021},
+  url     = {https://glossary.istqb.org/en/search},
+  urldate = {Jun. 01, 2023},
+}
+
+@Article{Microsoft2023d,
+  author  = {Microsoft},
+  journal = {Microsoft Learn},
+  title   = {Walkthrough: Create and run unit tests for managed code},
+  year    = {2023},
+  url     = {https://learn.microsoft.com/en-us/visualstudio/test/walkthrough-creating-and-running-unit-tests-for-managed-code?view=vs-2022},
+  urldate = {Sep. 01, 2023},
+}
+
+@Article{FontAwesome,
+  author  = {Gammasoft},
+  journal = {GitHub},
+  title   = {{Fat Cow Free Icons}},
+  year    = {2014},
+  month   = dec,
+  url     = {http://www.fatcow.com/free-icons},
+  urldate = {Aug. 03, 2023},
+}
+
+@Article{RefactoringGuru2023,
+  author  = {{Refactoring Guru}},
+  journal = {{Refactoring Guru}},
+  title   = {Adapter},
+  year    = {2023},
+  url     = {https://refactoring.guru/design-patterns/adapter},
+  urldate = {Sep. 01, 2023},
+}
+
+@Article{Okta2023,
+  author  = {{Okta, Inc.}},
+  journal = {Auth0 Docs},
+  title   = {OAuth 2.0 Authorization Framework | Endpoints | Authorization Endpoint},
+  year    = {2023},
+  url     = {https://auth0.com/docs/authenticate/protocols/oauth#authorization-endpoint},
+  urldate = {Sep. 01, 2023},
+}
+
+@Article{JGraph2023,
+  author  = {{JGraph Ltd.}},
+  title   = {draw.io},
+  year    = {2023},
+  url     = {https://www.drawio.com/},
+  urldate = {Aug. 24, 2023},
+}
+
+@Article{Hwaci2023,
+  author  = {Hwaci},
+  title   = {About SQLite},
+  year    = {2023},
+  url     = {https://www.sqlite.org/about.html},
+  urldate = {Aug. 31, 2023},
+}
+
+@Article{MDT2023,
+  author  = {{Matplotlib Development Team}},
+  journal = {Matplotlib Docs},
+  title   = {matplotlib.pyplot.boxplot},
+  year    = {2023},
+  url     = {https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.boxplot.html},
+  urldate = {Aug. 28, 2023},
+}
+
+@Article{FEG2022,
+  author  = {{Ford of Europe GmbH}},
+  journal = {Ford Media Center},
+  title   = {{Das Ford Cologne Electrification Center}},
+  year    = {2022},
+  url     = {https://electrification-center.fordpresskits.com/},
+  urldate = {Jul. 13, 2023},
+}
+
+@Article{ObiForce,
+  author  = {{Ford Motor Company}},
+  journal = {Ford Motor Company},
+  title   = {{OBI FORCE Overview}},
+  year    = {2022},
+  month   = may,
+  note    = {[CONFIDENTIAL]},
+  day     = {20},
+  url     = {Internal Source},
+  urldate = {Apr. 13, 2023},
+}
+
+@Article{Knight2020,
+  author  = {Andrew Knight},
+  journal = {Automation Panda},
+  title   = {Arrange-Act-Assert: A Pattern for Writing good Tests},
+  year    = {2020},
+  url     = {https://automationpanda.com/2020/07/07/arrange-act-assert-a-pattern-for-writing-good-tests/},
+  urldate = {Sep. 07, 2023},
+}
+
+@Article{Ar2023,
+  author  = {Paul Ar},
+  title   = {The Battle of C\# Testing Frameworks: NUnit vs. xUnit vs. MSTest},
+  year    = {2023},
+  url     = {https://levelup.gitconnected.com/the-battle-of-c-testing-frameworks-nunit-vs-xunit-vs-mstest-87b60d69da18},
+  urldate = {Sep. 07, 2023},
+}
+
+@Article{Newtonsoft2023,
+  author  = {Newtonsoft},
+  journal = {Json.NET Documentation},
+  title   = {Serializing and Deserializing JSON},
+  year    = {2023},
+  url     = {https://www.newtonsoft.com/json/help/html/serializingjson.htm},
+  urldate = {Sep. 07, 2023},
+}
+
+@Article{Microsoft2023e,
+  author  = {Microsoft},
+  journal = {Microsoft Learn},
+  title   = {Design the infrastructure persistence layer},
+  year    = {2023},
+  url     = {https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/infrastructure-persistence-layer-design},
+  urldate = {Sep. 10, 2023},
+}
+
+@Article{GitHub2023,
+  author = {{GitHub, Inc.}},
+  title  = {GitHub},
+  year   = {2023},
+  url    = {https://github.com/},
+}
+
+@Article{CCS2020,
+  author  = {{CEN (European Committee for Standardization)}},
+  title   = {European Standardizationin support of eCall},
+  year    = {2020},
+  url     = {https://www.itsstandards.eu/app/uploads/sites/14/2020/08/EuropeanStandardizationInSupportOfeCall.pdf},
+  urldate = {Sep. 12, 2023},
+}
+
+@Article{Company2023a,
+  author  = {{Ford Motor Company}},
+  journal = {Technical Support},
+  title   = {Ohms Where You Roam},
+  year    = {2023},
+  url     = {https://www.ford.com/support/category/electric-vehicle/charging/public-charging/},
+  urldate = {Sep. 12, 2023},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}

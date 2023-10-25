@@ -1,0 +1,78 @@
+% #####################################
+% THESIS TEMPLATE (HBRS BACHELOR & MASTER)
+% ----> resources/__TOCS.tex
+% Author: Ilka Salomon
+% E-Mail: ilka.salomon@gmx.de
+% #####################################
+
+\renewcommand*{\cleardoublepage}{\clearpage\if@twoside \ifodd\c@page\else
+\hbox{}%
+\thispagestyle{normalpage}%
+\newpage%
+\if@twocolumn\hbox{}\newpage\fi\fi\fi}
+
+\thispagestyle {normalpage}
+\pagenumbering{Roman} \setcounter{page}{1} 
+\phantomsection
+\thispagestyle {normalpage}
+\tableofcontents
+\addtocontents{toc}{\protect\thispagestyle{normalpage}}
+%\tableofcontents {\thispagestyle{normalpage}}
+	\addcontentsline{toc}{chapter}{ 	\en{Table of Contents}
+							\de{Inhaltsverzeichnis}}\thispagestyle {normalpage}
+							\newpage{} 
+	 \thispagestyle {normalpage}
+\pagestyle {normalpage}	
+
+\phantomsection
+\pagestyle {normalpage}	
+\listoffigures 
+\addtocontents{lof}{\protect\thispagestyle{normalpage}}
+\pagestyle {normalpage}	
+	\addcontentsline{toc}{chapter}{ 	\en{List of Figures}
+							\de{Abbildungsverzeichnis}}
+		\thispagestyle {normalpage}
+	\newpage{}\mbox{}\markboth{}{}
+\pagestyle {normalpage}	
+\newpage{}\pagestyle {normalpage}	
+
+\phantomsection
+\thispagestyle {normalpage}
+\listoftables
+	\addcontentsline{toc}{chapter}{ 	\en{List of Tables}
+							\de{Tabellenverzeichnis}}\thispagestyle {normalpage}
+	\newpage{}\mbox{}\markboth{}{}
+\pagestyle {normalpage}	
+\newpage{}\pagestyle {normalpage}	
+
+\phantomsection
+\lstlistoflistings
+\addcontentsline{toc}{chapter}{ 	\en{List of Listings}
+						\de{Quellcodeverzeichnis}}\thispagestyle {normalpage}
+						\newpage{}\mbox{}\markboth{}{}
+						\newpage{}\pagestyle {normalpage}
+\pagestyle {normalpage}	
+
+\phantomsection
+%\printnoidxglossary[type=\acronymtype,sort=word, title=\de{Abkürzungsverzeichnis}\en{ Glossary}]
+%\printnoidxglossaries
+\printglossary[type=Symbols]
+\printglossaries
+	\addcontentsline{toc}{chapter}{ 	\de{Abkürzungsverzeichnis}
+							\en{Glossary}}
+	\newpage
+\addtocontents{toc}{\protect\vspace{12pt}\mbox{}\protect\hrulefill\par\protect\vspace{12pt}}
+
+\newpage{}\ 	
+\pagestyle {empty}	
+\markboth{}{}
+\newpage{}\mbox{}
+\pagestyle {empty}	
+\markboth{}{}
+\newpage{}
+ \pagenumbering{arabic} \setcounter{page}{1} 
+% #####################################
+% THESIS TEMPLATE (HBRS BACHELOR & MASTER)
+% Author: Ilka Salomon
+% E-Mail: ilka.salomon@gmx.de
+% #####################################
